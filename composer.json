@@ -1,0 +1,12 @@
+{
+    "name": "albert/php-pm-test",
+    "require": {
+        "php-pm/php-pm": "^2.0"
+    },
+    "authors": [
+        {
+            "name": "Albert Casademont",
+            "email": "albertcasademont@gmail.com"
+        }
+    ]
+}
