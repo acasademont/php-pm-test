@@ -1,7 +1,6 @@
 # create the production container
-FROM alpine:3.10 AS release
-RUN apk --no-cache add \
-    php7 php7-cgi php7-pcntl php7-mbstring php7-iconv php7-session php7-json
+FROM php:7.3.2-stretch AS release
+RUN docker-php-ext-install pcntl
 WORKDIR /app
 COPY . ./
 EXPOSE 80
